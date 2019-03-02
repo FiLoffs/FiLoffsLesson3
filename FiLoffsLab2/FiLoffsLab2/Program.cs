@@ -12,6 +12,8 @@ namespace FiLoffsLab2
         {
             //task1();
             task2();
+            task9();
+            tas11();
         }
 
         //public static void task1()
@@ -59,7 +61,6 @@ namespace FiLoffsLab2
             //int[] chastnoe = Convert.ToInt32[] (Console.ReadLine());
             Console.WriteLine("Радиус кольца = " + r1 + ", Радиус отверстия = " + r2);
 
-
             if (r1 < r2)
             {
                 Console.WriteLine("Ошибка! Радиус отверстия не может быть больше радиуса кольца");
@@ -81,6 +82,72 @@ namespace FiLoffsLab2
 
         }
 
+        public static void task9()
+        {
+            Console.WriteLine("В каком году была основана Одесса?");
+            //s = PI * r в квадрате
+            int date;
+
+            //как сделать проверку, чтобы вводимое значение было числом?
+            //Как сделать паузу между выводимыми сообщениями в консоль?
+
+            Console.WriteLine("Введите число и нажмите <Enter>");
+            date = Convert.ToInt16(Console.ReadLine());
+
+            if (date == 1794)
+            {
+                Console.WriteLine("Вы правы, Одесса была основана в 1794 году");
+            }
+            else
+            {
+                Console.WriteLine("Вы ошиблись, Одесса была основана в 1794 году");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("================");
+            Console.WriteLine();
+
+        }
+
+        public static void tas11()
+        {
+            Console.WriteLine("В каком году была основана Одесса?");
+            //s = PI * r в квадрате
+            byte num;
+
+            //как сделать проверку, чтобы вводимое значение было числом?
+            //Как сделать паузу между выводимыми сообщениями в консоль?
+
+            Console.WriteLine("Архитектор Исаакиевского собора:");
+            Console.WriteLine("   " + "1. Доменико Трезини");
+            Console.WriteLine("   " + "2. Огюст Монферран");
+            Console.WriteLine("   " + "3. Карл Росси");
+            Console.WriteLine("Введите номер правильного ответа и нажмите <Enter>");
+
+            num = Convert.ToByte(Console.ReadLine());
+
+            switch (num)
+            {
+                case 1:
+                    Console.WriteLine("Вы ошиблись. Архитектор Исаакиевского собора Огюст Монферран");
+                    break;
+                case 2:
+                    Console.WriteLine("Вы совершено правы! Архитектор Исаакиевского собора Огюст Монферран");
+                    break;
+                case 3:
+                    Console.WriteLine("Вы ошиблись. Архитектор Исаакиевского собора Огюст Монферран");
+                    break;
+                default:
+                    Console.WriteLine("Вы ошиблись в выборе номера ответа.");
+                    break;
+            }
+            
+            Console.WriteLine();
+            Console.WriteLine("================");
+            Console.WriteLine();
+
+
+        }
 
     }
 }
