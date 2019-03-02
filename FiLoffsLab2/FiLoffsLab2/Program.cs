@@ -74,6 +74,8 @@ namespace FiLoffsLab2
                 result = Math.PI * Math.Pow(r1, 2) - Math.PI * Math.Pow(r2, 2);
                 Console.WriteLine("Площадь кольца = " + result + " кв.см");
                 Console.WriteLine("Площадь кольца = " + result.ToString("N01") + " кв.см");
+                //Console.WriteLine($ "Площадь кольца = {result.ToString("N01")} кв.см");
+
             }
 
             Console.WriteLine();
